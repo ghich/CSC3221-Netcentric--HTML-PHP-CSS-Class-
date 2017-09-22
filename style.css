@@ -1,0 +1,229 @@
+body {
+background: #515f22;
+background: linear-gradient(3deg, #445f44, #515f22);
+-webkit-animation: AnimationName 54s ease infinite;
+-moz-animation: AnimationName 54s ease infinite;
+animation: AnimationName 54s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+}
+
+h1{
+	font-family: "Arial", Helvetica, sans-serif;
+	text-align: center;
+	border-width: 1px;
+	border-style: groove;
+	border-color: black;
+	transition: background-color 2s linear;
+	transition: color 1s;
+}
+
+h1:hover {
+	background-color: black;
+	color: white;
+}
+
+li a{
+	font-family: "Arial", Verdana, Sans-serif;
+	font-size: 18;
+	display: inline;
+	float: right;
+	padding: 18px;
+	background-color: #DAA520;
+	border-left: 1px solid black;
+	color: black;
+	text-decoration: none;
+}
+
+a{
+	color: #8B4513;
+	text-decoration: none;
+}
+a:hover{
+	color: #2F4F4F;
+	transition: color  .5s ease;
+	text-decoration: none;
+}
+
+
+#navbar{
+	/*border: 2px solid black;
+	border-radius: 12px;*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	box-shadow: 0px 2px 15px 0px #273300;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	background-color: #DAA520;
+	top: 0;
+	width: 100%;
+	/*border-radius: 12px;*/
+}
+
+li a:last-child{
+	border-right: none;
+}
+
+li a.active{
+	color: black;
+	background-color: #F5D04C;
+}
+
+li a:hover:not(.active) {
+	transition: background-color 0.4s ease;
+	background-color: #FFAD73;
+	border-left: 1px solid black;
+}
+
+h2{
+	color: c1b27e;
+	margin: 1%;
+	text-shadow:0px 2px 15px #273300;
+}
+p{
+	color: c1b27e;
+	text-shadow: 0px 2px 15px #273300;
+}
+
+#content{
+	margin: auto;
+	margin-top: 75;
+	width: 65%;
+	border: 2px solid #c1b27e;
+	text-align: center;
+	font-family: "Arial", Helvetica, Sans-serif;
+	font-size: 24;
+	height: auto;
+	border-radius: 14px;
+	box-shadow: 0px 2px 15px 0px #273300;
+}
+
+input[type=submit]{
+    background-color: #c1b27e;
+    font-family: "Arial", Helvetica, Sans-serif;
+    border: none;
+    color: black;
+	height: 40px;
+	width: 15%;
+	padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 8px;
+	transition: 0.5s;
+	outline: none;
+	box-shadow: 0px 2px 15px 0px #273300;
+
+}
+
+input[type=submit]:active{
+	border: 1px solid black;
+}
+
+input[type=text]{
+	height: 40px;
+	width: 25%;
+	padding: 2px 3px;
+	text-decoration:none;
+	font-size: 18px;
+	border-radius: 8px;
+	font-family: "Arial", Helvetica, Sans-serif;
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+	border: 1px #c1b27e;
+	box-shadow: 0px 2px 15px 0px #273300;
+
+}
+
+input[type=text]:focus {
+	border: 1px solid black;
+}
+
+#stocktable{
+	background: #c1b27e;
+	border-collapse: collapse;
+	margin: auto;
+	padding: 5px;
+	width: 65%;
+	box-shadow: 0px 2px 15px 0px #273300;
+}
+
+th {
+  color: black;
+  background: #CFB53B;
+  font-family: 'Arial', Helvetica, Sans-serif;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+tr {
+  color: black;
+  font-style: none;
+  font-family: "Arial", Helvetica, Sans-serif;
+  border-top: 1px solid #c1b27e;
+  border-bottom-: 1px solid #c1b27e;
+  font-size: 18px;
+  text-decoration: none;
+  
+}
+
+tr:hover td {
+  background: #c1b27e;
+  color: black;
+  border-top: 1px solid #DAA520;
+  border-bottom: 1px solid #DAA520;
+  text-decoration: none;
+  border-right: 1px solid #DAA520;
+}
+
+td {
+  font-family: "Arial", Helvetica, Sans-serif;
+  background:#FFFFFF;
+  padding:8px;
+  text-align:left;
+  vertical-align:middle;
+  
+  font-size:18px;
+  border-right: 1px solid #c1b27e;
+  text-decoration: none;
+}
+
+tr:nth-child(even) td {
+  background:#FAFAD2;
+}
+tr:nth-child(even):hover td{
+  background: #c1b27e;
+}
